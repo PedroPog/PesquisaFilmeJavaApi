@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ProjetoCosumoApi</string>
+
+    <string-array name="Resumo_do_filme">
+        <item>Escolha o tipo de resumo</item>
+        <item>short</item>
+        <item>full</item>
+    </string-array>
+</resources>
