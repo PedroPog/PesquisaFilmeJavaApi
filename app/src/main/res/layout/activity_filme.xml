@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".FilmeActivity"
+android:background="#54FFD5">
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Nome do Filme"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    android:gravity="center"
+    android:id="@+id/editTextNomeFilme"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Ano de lançamento"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:maxLength="4"
+        android:gravity="center"
+        android:inputType="number"
+        android:id="@+id/editTextAno"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
+        android:outlineAmbientShadowColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_weight="1"
+        android:id="@+id/spinnerPlot"/>
+</LinearLayout>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/buttonPesquisar"
+    android:layout_marginStart="100dp"
+    android:layout_marginEnd="100dp"
+    android:textSize="20dp"
+    android:textColor="#9EEBD8"
+    android:backgroundTint="@color/black"
+    android:text="Pesquisar"/>
+
+<ImageView
+    android:id="@+id/imageViewPoster"
+    android:layout_width="match_parent"
+    android:layout_height="256dp"
+    tools:srcCompat="@tools:sample/avatars" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    android:text="Seja bem vindo!"
+    android:textAlignment="center"
+    android:textSize="25dp"
+    android:id="@+id/textViewTitle"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    android:text=""
+    android:textAlignment="center"
+    android:textSize="20dp"
+    android:id="@+id/textViewTimer"/>
+<TextView
+    android:layout_width="match_parent"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:textSize="15dp"
+    android:id="@+id/textViewAno"/>
+<RatingBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:id="@+id/ratingbar"
+    android:numStars="5"
+    android:isIndicator="true"
+    style="@style/CustomRatingBar"
+    />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPlot"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textAlignment="center"
+        />
+</ScrollView>
+
+
+
+</LinearLayout>

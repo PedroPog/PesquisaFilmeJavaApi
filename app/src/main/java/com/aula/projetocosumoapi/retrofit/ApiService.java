@@ -1,5 +1,6 @@
 package com.aula.projetocosumoapi.retrofit;
 
+import com.aula.projetocosumoapi.models.ApiResponse;
 import com.aula.projetocosumoapi.models.MovieModel;
 
 import retrofit2.Call;
@@ -10,6 +11,9 @@ public interface ApiService {
 
     @GET("?apikey=2785f90b")
     Call<MovieModel> buscarPorTitulo(@Query("t") String titulo);
+
+    @GET("?apikey=2785f90b")
+    Call<ApiResponse> buscarTodos(@Query("s") String titulo);
 
     @GET("?apikey=2785f90b")
     Call<MovieModel> buscarPorTituloeAno(@Query("t") String titulo,@Query("y") String ano);
