@@ -85,6 +85,6 @@ public class CustomAdapter extends BaseAdapter {
         Picasso.get().load(customListDataModelArrayList.get(pos).Poster).into(viewHolder.imageViewFilme);
         viewHolder.textViewNomeFilme.setText(customListDataModelArrayList.get(pos).Title);
 
-        return view;
+        return vi;
     }
 }

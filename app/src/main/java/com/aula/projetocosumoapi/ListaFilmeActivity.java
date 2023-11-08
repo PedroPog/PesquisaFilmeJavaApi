@@ -56,7 +56,7 @@ public class ListaFilmeActivity extends AppCompatActivity {
     }
 
     private void gerar(){
-        editTextNomeFilme.setText("");
+        //editTextNomeFilme.setText("");
             Call<ApiResponse> call = apiService.buscarTodos(editTextNomeFilme.getText().toString());
             call.enqueue(new Callback<ApiResponse>() {
                 @Override
@@ -72,6 +72,7 @@ public class ListaFilmeActivity extends AppCompatActivity {
                             }
                            Log.e("Teste","Ok");
                         }
+                    editTextNomeFilme.setText("");
                 }
 
                 @Override
